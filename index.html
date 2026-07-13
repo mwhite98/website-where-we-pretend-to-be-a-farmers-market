@@ -13,11 +13,19 @@
   <div class="wrapper">
     <div id="left-lawn"></div>
     <div id="bike-lane">
-      <div id="bike-left-lane"></div>
+      <div id="bike-left-lane">
+        <img can-move src="assets/bike1.png" alt="bike" id="bike-1" class="bikes" />
+        <img can-move src="assets/bike1.png" alt="bike" id="bike-2" class="bikes" />
+        <img can-move src="assets/bike2.png" alt="bike" id="bike-3" class="bikes" />
+        <img can-move src="assets/bike3.png" alt="bike" id="bike-4" class="bikes" />
+        <img can-move src="assets/bike3.png" alt="bike" id="bike-5" class="bikes" />
+      </div>
       <div id="bike-right-lane"></div>
     </div>
     <div id="inside-layout">
       <div id="top-park">
+        <!-- TODO -->
+        <!-- <marquee><h1>Welcome to the Haney Space Farmer's Market!</h1></marquee> -->
         <h1>Welcome to the Haney Space Farmer's Market!</h1>
       </div>
       <main id="farmers-market">
@@ -60,15 +68,102 @@
               </ul>
             </div>
           </div>
+          <div id="info-booth-stalls">
+            <div class="stall">
+              <img src="assets/booth-open-soon2.png" id="stall-info-booth-1" alt="market stall" />
+            </div>
+          </div>
         </div>
-        <div id="market"></div>
+        <div id="market">
+          <div id="market-top-row">
+            <div class="stall">
+              <img src="assets/booth-open-soon1.png" id="stall-1-1" alt="market stall" />
+            </div>
+            <div class="stall">
+              <img src="assets/booth-open-soon2.png" id="stall-1-2" alt="market stall" />
+            </div>
+            <div class="stall">
+              <img src="assets/booth-open-soon1.png" id="stall-1-3" alt="market stall" />
+            </div>
+            <div class="stall">
+              <img src="assets/booth-open-soon1.png" id="stall-1-4" alt="market stall" />
+            </div>
+            <div class="stall">
+              <img src="assets/booth-open-soon2.png" id="stall-1-5" alt="market stall" />
+            </div>
+            <div class="stall">
+              <img src="assets/booth-open-soon2.png" id="stall-1-6" alt="market stall" />
+            </div>
+          </div>
+          <div id="market-middle-row">
+            <div id="market-middle-left">
+              <div id="mml-top">
+                <div class="stall">
+                  <img src="assets/booth-open-soon1.png" id="stall-2-1" alt="market stall" />
+                </div>
+                <div class="stall">
+                  <img src="assets/booth-open-soon2.png" id="stall-2-2" alt="market stall" />
+                </div>
+              </div>
+              <div id="mml-bottom">
+                <div class="stall">
+                  <img src="assets/booth-open-soon1.png" id="stall-3-1" alt="market stall" />
+                </div>
+                <div class="stall">
+                  <img src="assets/booth-open-soon1.png" id="stall-3-2" alt="market stall" />
+                </div>
+              </div>
+            </div>
+            <div id="market-middle-centre">
+              <img src="assets/stage.png" id="stage" alt="stage" />
+            </div>
+            <div id="market-middle-right">
+              <div id="mmr-top">
+                <div class="stall">
+                  <img src="assets/booth-open-soon1.png" id="stall-2-3" alt="market stall" />
+                </div>
+                <div class="stall">
+                  <img src="assets/booth-open-soon1.png" id="stall-2-4" alt="market stall" />
+                </div>
+              </div>
+              <div id="mmr-bottom">
+                <div class="stall">
+                  <img src="assets/booth-open-soon2.png" id="stall-3-4" alt="market stall" />
+                </div>
+                <div class="stall">
+                  <img src="assets/booth-open-soon1.png" id="stall-3-5" alt="market stall" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="market-bottom-row">
+            <div class="stall">
+              <img src="assets/booth-open-soon1.png" id="stall-4-1" alt="market stall" />
+            </div>
+            <div class="stall">
+              <img src="assets/booth-open-soon2.png" id="stall-4-2" alt="market stall" />
+            </div>
+            <div class="stall">
+              <img src="assets/booth-open-soon2.png" id="stall-4-3" alt="market stall" />
+            </div>
+            <div class="stall">
+              <img src="assets/booth-open-soon1.png" id="stall-4-4" alt="market stall" />
+            </div>
+            <div class="stall">
+              <img src="assets/booth-open-soon1.png" id="stall-4-5" alt="market stall" />
+            </div>
+            <div class="stall">
+              <img src="assets/booth-open-soon2.png" id="stall-4-6" alt="market stall" />
+            </div>
+          </div>
+        </div>
         <div id="food-trucks"></div>
       </main>
       <div id="bottom-park"></div>
     </div>
   </div>
 
-  <!-- <script type="module">
+  <script type="module">
     import { playhtml } from "https://unpkg.com/playhtml@latest"
     playhtml.init({
       cursors: {
@@ -76,7 +171,7 @@
         room: "page"
       }
     })
-  </script> -->
+  </script>
 </body>
 
 </html>

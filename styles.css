@@ -26,6 +26,8 @@ h1, h2, h3, h4 {
 html, body, .wrapper {
   height: 100%;
   margin: 0;
+
+  overflow-x: scroll;
 }
 
 /* ===== wrapper layout ===== */
@@ -80,6 +82,10 @@ html, body, .wrapper {
   border-width: 3px;
 }
 
+.bikes {
+  width: 80px;
+}
+
 #inside-layout {
   flex-grow: 1;
 
@@ -99,9 +105,11 @@ html, body, .wrapper {
 #top-park {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
+
+  padding-left: 200px;
 }
 
 #top-park h1 {
@@ -200,6 +208,11 @@ main #entrance {
 /* info booth */
 #info-booth-column {
   width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 #info-booth-column #info-booth-wrapper {
@@ -246,3 +259,59 @@ main #entrance {
   margin-bottom: 5px;
 }
 
+/* stalls */
+#market {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  /* margin-left: 100px; */
+}
+
+.stall {
+  height: 100px;
+  margin: 20px;
+}
+
+.stall img {
+  height: 100%;
+}
+
+#market #market-top-row, #market-middle-row, #market-bottom-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#market #market-top-row, #market #market-bottom-row {
+  height: 20%;
+}
+
+#market #market-middle-row {
+  height: 40%;
+  margin-left: 100px;
+}
+
+#mml-top, #mml-bottom, #mmr-top, #mmr-bottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#market #market-middle-row #market-middle-centre {
+  height: 100%;
+  margin: 0px 50px;
+}
+
+#market #market-middle-row #market-middle-centre img {
+  height: 100%;
+}
+
+#market #market-middle-row #market-middle-centre #stage {
+  height: 100%;
+  max-width: 370px;
+}
