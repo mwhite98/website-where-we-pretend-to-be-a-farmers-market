@@ -39,7 +39,10 @@
             </div>
           </div>
           <div id="entrance-middle-row">
-            <img src="assets/welcome-sign.png" alt="welcome sign" />
+            <img src="assets/welcome-sign.png" id="welcome-sign" alt="welcome sign" />
+            <div can-mirror class="double-border-box hidden" id="welcome-message">
+              <p class="double-border-cell">Welcome to the Haney Space Farmer's Market <b><span can-mirror class="visitor-name"></span></b>!</p>
+            </div>
           </div>
           <div id="entrance-bottom-row">
             <div id="bike-locks">
@@ -161,9 +164,12 @@
       </main>
       <div id="bottom-park"></div>
     </div>
+    <!-- <div id="bulletin-board">
+
+    </div> -->
   </div>
 
-  <script type="module">
+  <!-- <script type="module">
     import { playhtml } from "https://unpkg.com/playhtml@latest"
     playhtml.init({
       cursors: {
@@ -171,7 +177,8 @@
         room: "page"
       }
     })
-  </script>
+  </script> -->
 </body>
+<script type="module" src="index.js"></script>
 
 </html>
