@@ -311,12 +311,24 @@ main #entrance {
 }
 
 .stall {
-  height: 100px;
+  height: 150px;
   margin: 20px;
+}
+
+.stall.opening-soon {
+  height: 100px;
 }
 
 .stall img {
   height: 100%;
+}
+
+.wares-item {
+  max-width: 50px;
+}
+
+.wares-item img {
+  width: 100%;
 }
 
 #market #market-top-row, #market-middle-row, #market-bottom-row {

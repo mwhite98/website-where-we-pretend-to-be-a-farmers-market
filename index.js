@@ -20,14 +20,17 @@ const lastNames = [
 ]
 
 const generateUserName = () => {
-  const firstName = firstNames[Math.floor(Math.random()*firstNames.length)]
-  const lastName = lastNames[Math.floor(Math.random()*lastNames.length)]
+  const firstName = firstNames[Math.floor(Math.random() * firstNames.length)]
+  const lastName = lastNames[Math.floor(Math.random() * lastNames.length)]
   const number = Math.floor(1000 + (9999 - 1000) * Math.random())
 
   const userName = firstName + lastName + number
   window.cursors.name = userName
   console.log('🌱 Welcome to the Haney Space Farmer\'s Market,', userName, '!')
 }
+
+// Run certain functions on page load
+generateUserName()
 
 // welcome visitor as they stroll through the welcome sign
 const welcomeSign = document.getElementById('welcome-sign')
@@ -42,7 +45,3 @@ welcomeSign.addEventListener('mouseenter', (event) => {
     welcomeMessage.classList.remove('visible')
   }, 3000)
 })
-
-// Run certain functions on page load
-
-generateUserName()
