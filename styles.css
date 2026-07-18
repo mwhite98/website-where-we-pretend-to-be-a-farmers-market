@@ -69,6 +69,7 @@ html, body, .wrapper {
   flex-wrap: nowrap;
   justify-content: flex-start;
 
+  position: relative;
   background-color: var(--green);
 }
 
@@ -379,4 +380,92 @@ main #entrance {
   width: 100px;
   height: 100px;
   background-color: pink;
+}
+
+/* ===== absolute items ===== */
+
+.grass-tuft {
+  width: 30px;
+  position: absolute;
+}
+
+.grass-tuft img {
+  width: 100%;
+}
+
+.grass-tuft .gt-flower {
+  width: 110%;
+  position: absolute;
+  top: -17px;
+  left: -2px;
+}
+
+.grass-tuft#gt-1 {
+  top: 200px;
+  left: 100px;
+}
+
+.grass-tuft#gt-2 {
+  left: 400px;
+  bottom: 300px;
+}
+
+.grass-tuft#gt-3 {
+  top: 400px;
+  left: 600px;
+}
+
+.grass-tuft#gt-4 {
+  left: 700px;
+  bottom: 230px;
+}
+
+.grass-tuft#gt-5 {
+  left: 270px;
+  bottom: 80px;
+}
+
+.grass-tuft#gt-6 {
+  top: 220px;
+  left: 780px;
+}
+
+.grass-tuft#gt-7 {
+  top: 50%;
+  left: 920px;
+}
+
+.grass-tuft#gt-8 {
+  bottom: 280px;
+  left: 1200px;
+}
+
+.grass-tuft#gt-9 {
+  top: 72px;
+  left: 1150px;
+}
+
+.grass-tuft#gt-10 {
+  top: 270px;
+  left: 1450px;
+}
+
+.grass-tuft#gt-11 {
+  bottom: 80px;
+  left: 1560px;
+}
+
+.grass-tuft#gt-12 {
+  bottom: 320px;
+  left: 1800px;
+}
+
+.grass-tuft#gt-13 {
+  top: 180px;
+  left: 2050px;
+}
+
+.grass-tuft#gt-14 {
+  top: 45%;
+  left: 2100px;
 }
