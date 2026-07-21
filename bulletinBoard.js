@@ -2,7 +2,7 @@ import { html, playhtml, repeat } from 'https://unpkg.com/playhtml@latest'
 
 // { name: 'FarmerJohn', message: 'hello!', at: Date.now() }
 
-playhtml.register('bulletin-board-test', {
+playhtml.register('bulletin-board-test2', {
   // a growing list of entries, each: { name, message, at }
   defaultData: { entries: [] },
   view: ({ data, setData }) => {

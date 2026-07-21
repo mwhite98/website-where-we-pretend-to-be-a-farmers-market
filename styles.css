@@ -424,16 +424,16 @@ main #entrance {
 }
 
 #bulletin-board-container {
-  position: absolute;
-  bottom: 20px;
+  position: fixed;
   right: 20px;
+  bottom: 20px;
 
   width: 250px;
   height: 300px;
   background-color: var(--message-board);
 }
 
-#bulletin-board-test {
+#bulletin-board-test2 {
   height: calc(100% - 12px);
   display: flex;
   flex-direction: column;
@@ -443,7 +443,7 @@ main #entrance {
   color: var(--font-color);
 }
 
-#bulletin-board-test h4 {
+#bulletin-board-test2 h4 {
   margin: 5px;
   text-align: center;
   border-bottom: 1px solid var(--font-color);
@@ -456,27 +456,27 @@ main #entrance {
   flex-direction: column-reverse;
 }
 
-#bulletin-board-test ul {
+#bulletin-board-test2 ul {
   list-style-type: none;
   padding: 0 3px;
   margin: 0;
 }
 
-#bulletin-board-test ul li {
+#bulletin-board-test2 ul li {
   margin: 5px 0;
   padding: 3px;
 }
 
-#bulletin-board-test ul li:nth-child(2n) {
+#bulletin-board-test2 ul li:nth-child(2n) {
   background-color: #FEF3EF;
   border-radius: 5px;
 }
 
-#bulletin-board-test form input {
+#bulletin-board-test2 form input {
   width: calc(100% - 48px);
 }
 
-#bulletin-board-test form input, button {
+#bulletin-board-test2 form input, button {
   margin: auto;
   font-family: Hershey-Noailles;
   color: var(--font-color);
