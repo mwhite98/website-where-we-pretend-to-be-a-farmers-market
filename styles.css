@@ -11,6 +11,8 @@
 
   --yellow: #feeda9;
 
+  --message-board: #FCDFD4;
+
   --font-color: #576784;
 }
 
@@ -217,7 +219,7 @@ main #entrance {
   position: absolute;
   top: -50px;
   left: 30px;
-  background-color: #FCDFD4;
+  background-color: var(--message-board);
 }
 
 /* bike locks and trees */
@@ -419,6 +421,65 @@ main #entrance {
   width: 100px;
   height: 100px;
   background-color: pink;
+}
+
+#bulletin-board-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  width: 250px;
+  height: 300px;
+  background-color: var(--message-board);
+}
+
+#bulletin-board-test {
+  height: calc(100% - 12px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-family: Hershey-Noailles;
+  color: var(--font-color);
+}
+
+#bulletin-board-test h4 {
+  margin: 5px;
+  text-align: center;
+  border-bottom: 1px solid var(--font-color);
+}
+
+#scroller {
+  max-height: 235px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#bulletin-board-test ul {
+  list-style-type: none;
+  padding: 0 3px;
+  margin: 0;
+}
+
+#bulletin-board-test ul li {
+  margin: 5px 0;
+  padding: 3px;
+}
+
+#bulletin-board-test ul li:nth-child(2n) {
+  background-color: #FEF3EF;
+  border-radius: 5px;
+}
+
+#bulletin-board-test form input {
+  width: calc(100% - 48px);
+}
+
+#bulletin-board-test form input, button {
+  margin: auto;
+  font-family: Hershey-Noailles;
+  color: var(--font-color);
 }
 
 /* ===== absolute items ===== */

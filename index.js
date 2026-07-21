@@ -1,4 +1,4 @@
-import { html, playhtml, repeat } from "https://unpkg.com/playhtml@latest"
+import { html, playhtml } from "https://unpkg.com/playhtml@latest"
 playhtml.init({
   cursors: {
     enabled: true,
