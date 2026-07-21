@@ -330,6 +330,33 @@ main #entrance {
   width: 100%;
 }
 
+/* carrot stall */
+.stall:has(img#stall-1-4) {
+  position: relative;
+}
+
+.stall:has(img#stall-1-4) .wares-item {
+  width: 30px;
+}
+
+.stall img#stall-1-4-bunny-1 {
+  position: absolute;
+  width: 70px;
+  height: auto;
+
+  bottom: 0;
+  left: 0;
+}
+
+.stall img#stall-1-4-bunny-2 {
+  position: absolute;
+  width: 30px;
+  height: auto;
+
+  bottom: 0;
+  right: 30px;
+}
+
 /* fish stall */
 .stall img#stall-4-3 {
   height: 120%;
