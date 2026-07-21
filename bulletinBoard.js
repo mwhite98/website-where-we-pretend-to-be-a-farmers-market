@@ -2,7 +2,7 @@ import { html, playhtml, repeat } from 'https://unpkg.com/playhtml@latest'
 
 // { name: 'FarmerJohn', message: 'hello!', at: Date.now() }
 
-playhtml.register('bulletin-board-test2', {
+playhtml.register('bulletin-board', {
   // a growing list of entries, each: { name, message, at }
   defaultData: { entries: [] },
   view: ({ data, setData }) => {
@@ -24,7 +24,7 @@ playhtml.register('bulletin-board-test2', {
     return html`
       <h4>Bulletin Board</h4>
       <div>
-      <div id="scroller">
+      <div id="bb-scroller">
       <ul>
         ${repeat(
           [...data.entries],

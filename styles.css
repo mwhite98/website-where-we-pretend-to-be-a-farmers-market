@@ -413,16 +413,6 @@ main #entrance {
 
 /* ===== bulletin board ===== */
 
-#bulletin-board {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-
-  width: 100px;
-  height: 100px;
-  background-color: pink;
-}
-
 #bulletin-board-container {
   position: fixed;
   right: 20px;
@@ -433,7 +423,7 @@ main #entrance {
   background-color: var(--message-board);
 }
 
-#bulletin-board-test2 {
+#bulletin-board {
   height: calc(100% - 12px);
   display: flex;
   flex-direction: column;
@@ -443,40 +433,40 @@ main #entrance {
   color: var(--font-color);
 }
 
-#bulletin-board-test2 h4 {
+#bulletin-board h4 {
   margin: 5px;
   text-align: center;
   border-bottom: 1px solid var(--font-color);
 }
 
-#scroller {
+#bb-scroller {
   max-height: 235px;
   overflow-y: scroll;
   display: flex;
   flex-direction: column-reverse;
 }
 
-#bulletin-board-test2 ul {
+#bulletin-board ul {
   list-style-type: none;
   padding: 0 3px;
   margin: 0;
 }
 
-#bulletin-board-test2 ul li {
+#bulletin-board ul li {
   margin: 5px 0;
   padding: 3px;
 }
 
-#bulletin-board-test2 ul li:nth-child(2n) {
+#bulletin-board ul li:nth-child(2n) {
   background-color: #FEF3EF;
   border-radius: 5px;
 }
 
-#bulletin-board-test2 form input {
+#bulletin-board form input {
   width: calc(100% - 48px);
 }
 
-#bulletin-board-test2 form input, button {
+#bulletin-board form input, button {
   margin: auto;
   font-family: Hershey-Noailles;
   color: var(--font-color);
